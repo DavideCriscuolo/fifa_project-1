@@ -87,17 +87,17 @@ export default function MainHome() {
               Non ci sono giocatori con questo nome{" "}
             </h2>
           )}
-          <div className="row row-cols-sm-2 row-cols-md-2 row-cols-lg-5">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
             {players.map((player) => {
               return (
                 <div className="col">
-                  <div class="card  bg-transparent border-0 text-white">
+                  <div className="card  bg-transparent border-0 text-white">
                     <img
-                      class="card-img-top"
+                      className="card-img-top"
                       src={player.cardImageUrl}
                       alt="Title"
                     />
-                    <div class="card-body p-2 text-center ">
+                    <div className="card-body p-2 text-center ">
                       <div>
                         {" "}
                         <button
