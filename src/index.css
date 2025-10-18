@@ -1,0 +1,33 @@
+main {
+  min-height: 100vh;
+  background-color: rgb(78, 78, 78);
+  color: white;
+}
+
+.btn {
+  color: white;
+  border-color: #89f24b;
+}
+.btn:hover {
+  color: black;
+  background-color: #89f24b;
+}
+.btn:first-child:active {
+  color: black;
+  background-color: #89f24b;
+}
+.btn:active {
+  color: black;
+  background-color: #89f24b;
+}
+.col {
+  max-height: 600px;
+}
+.bgCustom {
+  background-color: #89f24b;
+}
+
+.borderCustom {
+  border: 1px solid #89f24b;
+  border-radius: 10px;
+}
