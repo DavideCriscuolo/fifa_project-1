@@ -56,8 +56,13 @@ export default function MainHome() {
         <h1 className="text-center ">FUT MasterCoach</h1>
         <div>
           {" "}
-          {desc.map((t) => {
-            return <p className="text-center mb-1"> {t}</p>;
+          {desc.map((t, index) => {
+            return (
+              <p key={index} className="text-center mb-1">
+                {" "}
+                {t}
+              </p>
+            );
           })}
         </div>
 
@@ -88,9 +93,9 @@ export default function MainHome() {
             </h2>
           )}
           <div className="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
-            {players.map((player) => {
+            {players.map((player, index) => {
               return (
-                <div className="col">
+                <div key={index} className="col">
                   <div className="card  bg-transparent border-0 text-white">
                     <img
                       className="card-img-top"
