@@ -16,7 +16,7 @@ export default function MainHome() {
   ];
   console.log("Giocatori del club" + club);
   function gnrPlayers() {
-    let url = import.meta.ev.VITE_GNR_PLAYERS + page;
+    let url = import.meta.env.VITE_GNR_PLAYERS + page;
 
     fetch(url)
       .then((response) => response.json())
