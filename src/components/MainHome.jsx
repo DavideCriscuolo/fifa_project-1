@@ -87,7 +87,7 @@ export default function MainHome() {
               Non ci sono giocatori con questo nome{" "}
             </h2>
           )}
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
+          <div className="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
             {players.map((player) => {
               return (
                 <div className="col">
