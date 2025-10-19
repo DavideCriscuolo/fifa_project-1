@@ -120,6 +120,9 @@ Devi comportarti come un **allenatore e analista** esperto di FUT 26, rispondend
       setLoading(false);
     }
   }
+  const rimuoviDalClub = (indexToRemove) => {
+    props.setClub(props.club.filter((_, i) => i !== indexToRemove));
+  };
 
   return (
     <div className="container d-flex justify-content-center py-2">
@@ -155,9 +158,12 @@ Devi comportarti come un **allenatore e analista** esperto di FUT 26, rispondend
                   {props.club && props.club.length > 0 ? (
                     props.club.map((player, index) => (
                       <div key={index}>
-                        <span className="badge bgCustom text-black">
+                        <button
+                          onClick={() => rimuoviDalClub(index)}
+                          className="badge bgCustom text-black"
+                        >
                           {player.commonName}
-                        </span>
+                        </button>
                       </div>
                     ))
                   ) : (

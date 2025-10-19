@@ -14,7 +14,7 @@ export default function MainHome() {
     "Seleziona i tuoi giocatori preferiti, costruisci la tua squadra ideale e ricevi consigli tattici e analisi strategiche in tempo reale dal tuo coach ai.",
     " Ottimizza formazione, ruoli e intesa della squadra con suggerimenti basati esclusivamente sulle statistiche dei tuoi giocatori.",
   ];
-  console.log("Giocatori del club" + club);
+  //console.log("Giocatori del club" + club);
   function gnrPlayers() {
     let url = import.meta.env.VITE_GNR_PLAYERS + page;
 
@@ -27,7 +27,7 @@ export default function MainHome() {
 
       .catch((error) => console.error(error));
   }
-  console.log(players);
+  // console.log(players);
   useEffect(gnrPlayers, [page]);
 
   function serachName(e) {
@@ -123,7 +123,7 @@ export default function MainHome() {
           </div>
           <div>
             {" "}
-            <CoachAi club={club}></CoachAi>
+            <CoachAi setClub={setClub} club={club}></CoachAi>
           </div>
         </div>
         <div className="d-flex justify-content-center gap-2">
